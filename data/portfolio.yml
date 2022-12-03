@@ -1,0 +1,26 @@
+portfolioitems:
+  # portfolio category
+  - title: Coding Projects
+    portfolioitem:
+      - name: OpenFero
+        image: '/images/portfolio/code.jpg'
+        link: https://github.com/Payback159/openfero
+        linktext: 'Visit project website'
+        description: 'OpenFero is intended as an event-triggered job scheduler framework for code agnostic recovery jobs. '
+        tags:
+          - self-healing
+          - OpenFero
+          - kubernetes
+        status: 'Ongoing'
+        start: '2022'
+        authors:
+          - payback159
+      - name: Tenama
+        image: '/images/portfolio/code.jpg'
+        link: https://github.com/Payback159/tenama
+        description: 'Tenama provides a simple REST API that allows non-cluster administrators in a shared Kubernetes environment to create temporary namespaces. tenama handles the creation, management, and cleanup of the temporary namespaces. '
+        status: 'Ongoing'
+        start: '2022'
+        tags:
+          - kubernetes
+          - cloud-native

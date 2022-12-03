@@ -16,6 +16,11 @@ profilePicture = "images/profile.gif"
   icon = "fab fa-github"
   title = "GitHub"
   url = "https://github.com/Payback159"
+  
+  [[params.socialIcons]]
+  icon = "fab fa-medium"
+  title = "Medium"
+  url = "https://medium.com/@payback159"
 
   [[params.socialIcons]]
   icon = "fab fa-linkedin"
@@ -26,6 +31,7 @@ profilePicture = "images/profile.gif"
   icon = "fab fa-xing"
   title = "Xing"
   url = "https://www.xing.com/profile/Alexander_Jelinek4/portfolio"
+
 
 [markup]
     [markup.goldmark]
@@ -45,11 +51,11 @@ profilePicture = "images/profile.gif"
   identifier = "posts"
   url = "/posts/"
 
-#  [[menu.main]]
-#  name = "About"
-#  weight = 300
-#  identifier = "about"
-#  url = "/about/"
+  [[menu.main]]
+  name = "Portfolio"
+  weight = 300
+  identifier = "portfolio"
+  url = "/portfolio/"
 
 [related]
   includeNewer = true
