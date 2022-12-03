@@ -9,8 +9,9 @@ tags:
   - openfero
 ---
 
-![](https://cdn-images-1.medium.com/max/1600/0*BttpClgrW2Yrq-Bv)
-Photo by Austin Kehmeier on Unsplash
+| ![Hands reaching for each other](https://cdn-images-1.medium.com/max/1600/0*BttpClgrW2Yrq-Bv) |
+|:--:|
+| *Photo by Austin Kehmeier on Unsplash* |
 
 Hi guys, my first story is about my hobby project "OpenFero".
 
