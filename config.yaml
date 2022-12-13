@@ -1,0 +1,60 @@
+module:
+  imports:
+    path: "github.com/lxndrblz/anatole"
+    disable: false
+sitemap:
+  changefreq: 'monthly'
+  filename: 'sitemap.xml'
+  priority: 0.5
+params:
+  baseURL: "https://payback159.github.io"
+  title: "Alexander Jelinek"
+  author: "Alexander Jelinek"
+  description: |-
+    Hi there, my name is Alex 👋
+  
+    I'm a platform engineer from Austria.
+  
+    I had an early interest in Linux and open source software in general,
+    but it was Kubernetes and my entry into the cloud native world that sparked my interest in learning the different ways to deploy a platform.
+  profilePicture: "images/profile.gif"
+  socialIcons:
+    - icon: "fab fa-github"
+      title: "GitHub"
+      url: "https://github.com/Payback159"
+    - icon: "fab fa-medium"
+      title: "Medium"
+      url: "https://medium.com/@payback159"
+    - icon: "fab fa-linkedin"
+      title: "Linkedin"
+      url: "https://www.linkedin.com/in/alexanderjelinek/"
+    - icon: "fab fa-xing"
+      title: "Xing"
+      url: "https://www.xing.com/profile/Alexander_Jelinek4/portfolio"
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+menu:
+  main:
+    - identifier: "home"
+      name: "Home"
+      url: "/"
+      weight: 100
+    - identifier: "posts"
+      name: "Posts"
+      weight: 200
+      url: "/posts/"
+    - identifier: "portfolio"
+      name: "Portfolio"
+      weight: 300
+      url: "/portfolio/"
+related:
+  indices:
+    - name: "keywords"
+      weight: 100
+    - name: "tags"
+      weight: 80
+  includeNewer: true
+  threshold: 80
+  toLower: true
