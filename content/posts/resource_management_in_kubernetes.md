@@ -1,6 +1,6 @@
 ---
 title: 'Resource Management in Kubernetes'
-date: 2023-11-11T23:36:00+00:00
+date: 2022-11-11T23:36:00+00:00
 draft: false
 tags:
   - kubernetes
