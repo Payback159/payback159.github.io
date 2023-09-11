@@ -2,7 +2,7 @@
 title: 'The journey to a self-healing platform'
 date: 2022-11-08T21:47:41+00:00
 draft: false
-tags:
+Tags:
   - kubernetes
   - self-healing
   - cloud native
