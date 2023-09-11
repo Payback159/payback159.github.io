@@ -6,6 +6,8 @@ tags:
   - kubernetes
   - resources
   - management
+  - scheduling
+  - out of memory
 ---
 
 | ![Photo by Growtika on UnsplashForeword](https://cdn-images-1.medium.com/max/1600/0*mye2tGZdVkKTFr1c) |
@@ -25,14 +27,14 @@ In general, the 4 values of CPU Requests, CPU Limits, Memory Requests and Memory
 When you want to roll out a pod, whether managed by a manager (e.g.: Deployment, StatefulSet) or not on Kubernetes, the installation goes through a scheduling phase. During scheduling, Kubernetes takes into account the values of CPU requests and memory requests you specify.
 Specifically, if you have a pod with CPU request of 1 ( or 1000m), Kubernetes will only consider nodes that have at least one CPU free. Mathematically, these are all nodes where
 
-```
+```bash
 sum(cpu-requests of all scheduled pods on this node)
  - (Total CPU count of this node) >= 1000m (1 Core)
 ```
 
 Of course, a similar calculation applies to memory requests, if one assumes that the deployment has a memory request of 1Gi.
 
-```
+```bash
 sum(memory-requests of all scheduled pods on this node)
  - (Total Memory count of this node) >= 1Gi
 ```
