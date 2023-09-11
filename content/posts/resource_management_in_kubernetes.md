@@ -14,7 +14,7 @@ tags:
 
 ## Foreword
 
-In the following chapter we will discuss the topics CPU requests, CPU limits, memory requests and memory limits. We will try to go into details here only so far as to build an understanding of the foundation of Kubernetes Resources Management. For those who are interested in the topic and want to learn more, I recommend the official documentation https://kubernetes.io/docs/tasks/configure-pod-container/assign-cpu-resource/.
+In the following chapter we will discuss the topics CPU requests, CPU limits, memory requests and memory limits. We will try to go into details here only so far as to build an understanding of the foundation of Kubernetes Resources Management. For those who are interested in the topic and want to learn more, I recommend the official documentation <https://kubernetes.io/docs/tasks/configure-pod-container/assign-cpu-resource/>.
 
 ## General
 
@@ -43,7 +43,7 @@ For the sake of completeness, it should be mentioned here that the values CPU Li
 
 We come to the 2nd phase. Kubernetes was able to successfully deploy your pod on a node. From now on, the CPU limits and memory limits come into play. Depending on which of these limits your pod reaches, Kubernetes reacts differently hard. In the case of CPU limits, the requested CPU (time) will be withdrawn from your pod and a throttling occurs. However, this may or may not have a negative impact on your application from an end user perspective.
 
-In the case of memory limits, Kubernetes uses the so-called Out of Memory Manager. The Out of Memory Manager is a well-maintained component from the Linux area and is intended to protect the system from processes that try to use more memory than is available / allowed. Should your pod exceed the memory limits, the process and with it the container will be automatically killed in order not to consume even more memory.
+In the case of memory limits, Kubernetes uses the so-called Out of Memory Manager. The [Out of Memory Manager](https://www.kernel.org/doc/gorman/html/understand/understand016.html) is a well-maintained component from the Linux area and is intended to protect the system from processes that try to use more memory than is available / allowed. Should your pod exceed the memory limits, the process and with it the container will be automatically killed in order not to consume even more memory.
 
 **Summary**: If you reach the CPU limits, your pod will be throttled but will continue to run. If you reach the memory limits, your pod will be killed and restarted.
 
@@ -57,7 +57,7 @@ As already described, your application is throttled on the CPU side if the actua
 
 ### Memory-Requests
 
-At this time, I personally would not recommend over-provisioning memory in a production environment unless you are quite sure that your application(s) can handle unexpected out of memory kills and or failures. That is why I am using Kubernetes LimitRange to enforce that the ratio between memory requests and memory limits is always 1.
+At this time, I personally would not recommend over-provisioning memory in a production environment unless you are quite sure that your application(s) can handle unexpected out of memory kills and or failures. That is why I am using Kubernetes [LimitRange](https://kubernetes.io/docs/concepts/policy/limit-range/) to enforce that the ratio between memory requests and memory limits is always 1.
 This way I can ensure that the requests and limits always get the same value and thus no over-provisioning takes place. You can achieve this by only defining memory limits in your deployment or by equating these values.
 
 ### Memory-Limits
