@@ -43,12 +43,12 @@ menu:
       weight: 100
     - identifier: "posts"
       name: "Posts"
-      weight: 200
       url: "/posts/"
+      weight: 200
     - identifier: "portfolio"
       name: "Portfolio"
-      weight: 300
       url: "/portfolio/"
+      weight: 300
 related:
   indices:
     - name: "keywords"
