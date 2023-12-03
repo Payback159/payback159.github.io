@@ -5,11 +5,14 @@ module:
 sitemap:
   changefreq: 'monthly'
   filename: 'sitemap.xml'
-  priority: 0.5
+  priority: -1
 params:
   baseURL: "https://payback159.github.io"
   title: "Alexander Jelinek"
   author: "Alexander Jelinek"
+  contentratio: 0.7
+  customCss: ["css/syntax.css"]
+  readMore: true
   description: |-
     Hi there, my name is Alex 👋
   
@@ -32,9 +35,12 @@ params:
       title: "Xing"
       url: "https://www.xing.com/profile/Alexander_Jelinek4/portfolio"
 markup:
-  goldmark:
-    renderer:
-      unsafe: true
+  highlight:
+    guessSyntax: true
+    codeFences: true
+    noClasses: true
+    style: "github-dark"
+    useClasses: true
 menu:
   main:
     - identifier: "home"

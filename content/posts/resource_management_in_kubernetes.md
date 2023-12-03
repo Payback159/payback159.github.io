@@ -29,14 +29,14 @@ Specifically, if you have a pod with CPU request of 1 ( or 1000m), Kubernetes wi
 
 ```bash
 sum(cpu-requests of all scheduled pods on this node)
- - (Total CPU count of this node) >= 1000m (1 Core)
+- (Total CPU count of this node) >= 1000m (1 Core)
 ```
 
 Of course, a similar calculation applies to memory requests, if one assumes that the deployment has a memory request of 1Gi.
 
 ```bash
 sum(memory-requests of all scheduled pods on this node)
- - (Total Memory count of this node) >= 1Gi
+- (Total Memory count of this node) >= 1Gi
 ```
 
 For the sake of completeness, it should be mentioned here that the values CPU Limits and Memory Limits are not taken into account in this phase.
