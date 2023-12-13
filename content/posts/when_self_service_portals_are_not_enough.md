@@ -25,7 +25,7 @@ Our Kubernetes landscape works in a relatively centralized way. We, as the Platf
 
 As a result, we have to operate fewer clusters, but in my view the consideration of who is allowed to do what (classic RBAC questions) occurs more frequently, as we cannot allow individual teams to simply create their namespaces via `kubectl create namespace`. (Hello good old friend of the separation of concerns)
 
-We had already started to establish a self-service portal with existing solutions early on in our Kubernetes journey so that teams could still request their namespaces without manual effort. This was easily possible for structured approaches such as projects where it was usually already clear that the workload would exist over a longer period of time.
+We had already started to establish a self-service portal with existing solutions early on in our Kubernetes journey so that teams could still request their namespaces with as little manual effort as possible. This was easily possible for structured approaches such as projects where it was usually already clear that the workload would exist over a longer period of time.
 
 But how can such a self-service portal with partially manual review processes in the background (despite GitOps) help when we need an environment for our development & automated tests at short notice?
 
