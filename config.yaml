@@ -20,7 +20,7 @@ params:
 
     I had an early interest in Linux and open source software in general,
     but it was Kubernetes and my entry into the cloud native world that sparked my interest in learning the different ways to deploy a platform.
-  profilePicture: "images/profile.jpg"
+  profilePicture: "images/profile.png"
   socialIcons:
     - icon: "fab fa-github"
       title: "GitHub"
