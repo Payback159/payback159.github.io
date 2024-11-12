@@ -7,7 +7,6 @@ Tags:
   - resources
   - management
   - google kubernetes engine
-  - google
 ---
 
 | ![Photo by Shubham Dhage on UnsplashForeword](https://cdn-images-1.medium.com/max/1600/0*TwHlcUDbkuVGrGhu) |
