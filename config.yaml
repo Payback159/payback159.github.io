@@ -1,7 +1,7 @@
 module:
-  theme:
-    name: "anatole"
-    version: "1.15.1"
+  imports:
+    path: "github.com/lxndrblz/anatole"
+    disable: false
 sitemap:
   changefreq: "monthly"
   filename: "sitemap.xml"
