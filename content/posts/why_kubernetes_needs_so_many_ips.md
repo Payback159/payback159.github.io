@@ -1,5 +1,5 @@
 ---
-title: 'Why Kubernetes needs so many IPs?'
+title: 'Why Kubernetes needs so many IPs'
 date: 2024-11-12T19:50:00+00:00
 draft: false
 Tags:
