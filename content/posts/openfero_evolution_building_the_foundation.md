@@ -1,6 +1,6 @@
 ---
-title: 'OpenFero Evolution: Building the Foundation for community-driven Self-Healing Framework'
-date: 2025-05-20T21:00:00+00:00
+title: 'OpenFero Evolution: Building the Foundation for Community-Driven Self-Healing Framework'
+date: 2025-05-20T20:00:00+00:00
 draft: false
 Tags:
   - kubernetes
@@ -41,23 +41,13 @@ The UI makes the self-healing process more transparent and accessible, allowing 
 
 ## Enhanced Operarios Traceability
 
-Operarios—OpenFero's name for the remediation jobs—now provide enhanced traceability. The system collects comprehensive data about triggered jobs, creating an audit trail that shows:
-
-- When a job was triggered
-- What alert caused it
-- Complete execution details
-- Success or failure status
+Operarios—OpenFero's name for the remediation jobs—now provide enhanced traceability. The system collects comprehensive data about triggered jobs, creating an audit trail that shows when a job was triggered, what alert caused it, complete execution details and success or failure status.
 
 This improved traceability is invaluable for post-incident analysis and continuous improvement of your self-healing processes.
 
 ## Improved Reliability with Cluster Mode
 
-For production environments where high availability is critical, OpenFero now offers a cluster mode. This mode:
-
-- Enables multiple OpenFero instances to run in parallel
-- Implements leader election to prevent duplicate job executions
-- Includes Pod Disruption Budgets (PDBs) for stability during cluster maintenance
-- Maintains consistent state across instances
+For production environments where high availability is critical, OpenFero now offers a cluster mode. This mode enables multiple OpenFero instances to run in parallel and maintains consistent state across instances. With this the deployment also includes Pod Disruption Budgets (PDBs) for stability during cluster maintenance.
 
 These enhancements make OpenFero suitable for even the most demanding production environments.
 
