@@ -1,6 +1,5 @@
 ---
-title: 'OpenFero Evolution: Building the Foundation 
-for community-driven Self-Healing Framework'
+title: 'OpenFero Evolution: Building the Foundation for community-driven Self-Healing Framework'
 date: 2025-05-20T21:00:00+00:00
 draft: false
 Tags:
