@@ -62,14 +62,20 @@ helm install openfero oci://ghcr.io/openfero/openfero/charts/openfero --version 
 
 The chart intelligently detects your cluster configuration and applies appropriate settings, making deployment smooth across different Kubernetes environments.
 
-## Testing and Interacting with OpenFero
+Once installed, you can interact with OpenFero in several ways. For example by opening a local port with kubectl port-forward:
 
 Once installed, you can interact with OpenFero in several ways:
 
-1. **Using the new UI**: Access the dashboard at `http://openfero-service:8080/`
-2. **Using the Swagger UI**: Explore and test the API at `http://openfero-service:8080/swagger/`
-3. **Using curl for direct API access**:
-   ```bash
+```bash
+export POD_NAME=$(kubectl get pods --namespace openfero -l "app.kubernetes.io/name=openfero,app.kubernetes.io/instance=openfero" -o jsonpath="{.items[0].metadata.name}")
+export CONTAINER_PORT=$(kubectl get pod --namespace openfero $POD_NAME -o jsonpath="{.spec.containers[0].ports[0].containerPort}")
+echo "Visit http://127.0.0.1:8080 to use your application"
+kubectl --namespace openfero port-forward $POD_NAME 8080:$CONTAINER_PORT
+```
+
+Afterwards you can access the dashboard at http://localhost:8080/ or by exploring and testing the API at http://localhost:8080/swagger/ or directly curl API like:
+
+```bash
    curl -X POST http://openfero-service:8080/alert \
      -H 'Content-Type: application/json' \
      -d '{
@@ -82,7 +88,7 @@ Once installed, you can interact with OpenFero in several ways:
          }
        }]
      }'
-   ```
+```
 
 ## Performance Improvements
 
