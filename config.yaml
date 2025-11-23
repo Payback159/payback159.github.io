@@ -11,15 +11,11 @@ params:
   title: "Alexander Jelinek"
   author: "Alexander Jelinek"
   contentratio: 0.7
-  customCss: ["css/syntax.css"]
+  customCss: ["css/syntax.css", "css/skills.css"]
   readMore: true
   description: |-
-    Hi there, my name is Alex 👋
-
-    I'm a platform engineer from Austria.
-
-    I had an early interest in Linux and open source software in general,
-    but it was Kubernetes and my entry into the cloud native world that sparked my interest in learning the different ways to deploy a platform.
+    Hi there, my name is Alex. 👋 I'm a platform engineer from Austria.
+    I had an early interest in Linux and open source software in general, but it was Kubernetes and my entry into the cloud native world that sparked my interest in learning the different ways to deploy a platform.
   profilePicture: "images/profile.png"
   socialIcons:
     - icon: "fab fa-github"

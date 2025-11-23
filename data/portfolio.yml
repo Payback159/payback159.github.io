@@ -3,7 +3,7 @@ portfolioitems:
   - title: Coding Projects
     portfolioitem:
       - name: OpenFero
-        image: "/images/portfolio/code.jpg"
+        image: "/images/openfero_logo.jpg"
         link: https://github.com/Payback159/openfero
         linktext: "Visit project website"
         description: "OpenFero is intended as an event-triggered job scheduler framework for code agnostic recovery jobs. "
@@ -15,12 +15,89 @@ portfolioitems:
         start: "2022"
         authors:
           - payback159
+      - name: Namespace Resizer
+        link: https://github.com/Payback159/namespace-resizer
+        description: "A Kubernetes controller that automatically monitors and adjusts ResourceQuota limits based on actual usage and 'FailedCreate' events. It follows a GitOps-first approach, creating Pull Requests for quota changes."
+        status: "Active"
+        start: "2025"
+        tags:
+          - Kubernetes
+          - Controller
+          - GitOps
+          - Go
+          - Automation
       - name: Tenama
-        image: "/images/portfolio/code.jpg"
         link: https://github.com/Payback159/tenama
         description: "Tenama provides a simple REST API that allows non-cluster administrators in a shared Kubernetes environment to create temporary namespaces. tenama handles the creation, management, and cleanup of the temporary namespaces. "
-        status: "Ongoing"
+        status: "Maintenance"
         start: "2022"
         tags:
           - kubernetes
           - cloud-native
+      - name: Notenschlüssel
+        link: https://github.com/Payback159/notenschluessel
+        description: "A modern, secure Austrian grading scale calculator built with Go. Features include configurable grade boundaries, CSV/Excel import/export, and native CSRF protection."
+        status: "Active"
+        start: "2025"
+        tags:
+          - Go
+          - Web App
+          - Education
+          - Docker
+          - Security
+      - name: Timetabler
+        description: "An automated timetable generator for Austrian primary schools, compliant with local school laws (SchOG, SchUG). Uses Google OR-Tools CP-SAT for optimal scheduling and features a modern Vue.js frontend."
+        status: "Active"
+        start: "2025"
+        tags:
+          - Python
+          - FastAPI
+          - Vue.js
+          - Google OR-Tools
+          - Education
+          - Optimization
+      - name: Firewall Management UI
+        description: "Developed a Wails.io desktop application to allow IT Security teams to manage Google Cloud Firewall rules without Terraform knowledge, effectively establishing a user-friendly frontend for the Infrastructure as Code backend."
+        status: "Completed"
+        start: "2025"
+        tags:
+          - Wails
+          - Go
+          - Terraform
+          - Google Cloud
+          - Security
+
+  - title: Infrastructure & Platform Projects
+    portfolioitem:
+      - name: Public Cloud Migration
+        description: "Cloud Architect for the migration of an on-premise landscape to the Public Cloud with a strong focus on Platform Services and Virtualization."
+        start: "2023"
+        tags:
+          - Cloud Architecture
+          - Public Cloud
+          - Migration
+          - Containers
+      - name: Platform Migration & In-House Kubernetes
+        description: "Technical Lead for Platform Services migrating from SUSE CaaS to an in-house platform based on OpenStack and Kubespray. Established a GitOps workflow and focused on a central monitoring service based on the Prometheus stack."
+        image: "/images/kubespray_logo.png"
+        start: "2019"
+        tags:
+          - OpenStack
+          - Kubespray
+          - Migration
+          - Leadership
+      - name: On-Premise Kubernetes Platform
+        description: "Planning, architecture, and operation of an on-premise Kubernetes platform based on SUSE Container as a Service. Included establishing know-how and providing migration support."
+        start: "2017"
+        tags:
+          - Kubernetes
+          - SUSE CaaS
+          - On-Premise
+          - Architecture
+      - name: Central Logging Service
+        description: "Established a central logging service based on the Elastic Stack."
+        start: "2016"
+        tags:
+          - Elastic Stack
+          - Logging
+          - Infrastructure

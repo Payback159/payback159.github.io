@@ -1,0 +1,51 @@
+skills:
+  - category: "☁️ Cloud Native & Kubernetes"
+    description: "My primary focus lies in the Cloud Native ecosystem, specifically Kubernetes. I have **8+ years** of hands-on experience in designing, building, and maintaining production-grade platforms."
+    items:
+      - name: "Orchestration"
+        details: "Kubernetes (Production clusters, GKE, Vanilla), Helm, Kustomize"
+      - name: "Observability"
+        details: "Prometheus, Grafana"
+      - name: "GitOps"
+        details: "Flux"
+      - name: "Networking"
+        details: "CNI plugins, Ingress Controllers (Nginx)"
+      - name: "Storage"
+        details: "CSI drivers, Persistent Volumes"
+
+  - category: "💻 Software Development"
+    description: "I am a polyglot programmer with a strong preference for Go when building cloud-native tools and controllers."
+    items:
+      - name: "Go (Golang)"
+        details: "Building Kubernetes Operators, Microservices, CLIs, and backend services (e.g., [OpenFero](https://github.com/OpenFero))"
+      - name: "Python"
+        details: "Scripting, automation, and data processing"
+      - name: "Web Technologies"
+        details: "Vue.js, JavaScript, HTML5, CSS3 (for dashboards and UIs)"
+      - name: "Shell"
+        details: "Bash/Zsh scripting for system administration and automation"
+
+  - category: "🛠️ DevOps & Platform Engineering"
+    description: 'I believe in "Everything as Code" and self-service platforms.'
+    items:
+      - name: "CI/CD"
+        details: "GitHub Actions, Jenkins"
+      - name: "Infrastructure as Code"
+        details: "Terraform, Ansible"
+      - name: "Containerization"
+        details: "Docker, containerd"
+      - name: "Operating Systems"
+        details: "Linux (Ubuntu, Debian), RaspberryPi"
+      - name: "Cloud Platforms"
+        details: "Google Cloud, OpenStack"
+
+  - category: "💡 Core Competencies"
+    items:
+      - name: "Architecture"
+        details: "Kubernetes Architecture, Hybrid-Cloud Strategy, Microservices"
+      - name: "Platform"
+        details: "Internal Developer Platforms (IDPs), Self-Service Portals"
+      - name: "Processes"
+        details: "GitOps Workflows, Cloud Migration, Cost Optimization"
+      - name: "Development"
+        details: "API Development, Full-Stack Web Apps"
