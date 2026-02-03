@@ -1,31 +1,30 @@
 portfolioitems:
   # portfolio category
-  - title: Coding Projects
+  - title: Engineering Excellence & Tooling
     portfolioitem:
-      - name: OpenFero
+      - name: OpenFero (Self-Healing Framework)
         image: "/images/openfero_logo.jpg"
         link: https://github.com/Payback159/openfero
         linktext: "Visit project website"
-        description: "OpenFero is intended as an event-triggered job scheduler framework for code agnostic recovery jobs. "
+        description: "Architected a code-agnostic job scheduler for event-triggered recovery. Reduced manual intervention by automating self-healing patterns across complex Kubernetes environments."
         tags:
-          - self-healing
-          - OpenFero
-          - kubernetes
+          - Distributed Systems
+          - Self-Healing
+          - Kubernetes Operator
         status: "Ongoing"
         start: "2022"
         authors:
           - payback159
-      - name: Namespace Resizer
+      - name: Automated Quota Governance (Namespace Resizer)
         link: https://github.com/Payback159/namespace-resizer
-        description: "A Kubernetes controller that automatically monitors and adjusts ResourceQuota limits based on actual usage and 'FailedCreate' events. It follows a GitOps-first approach, creating Pull Requests for quota changes."
+        description: "Engineering lead for a GitOps-based controller that dynamically scales ResourceQuotas. Bridged the gap between developer needs and cluster stability while ensuring transparent resource allocation via PR-automation."
         status: "Active"
         start: "2025"
         tags:
-          - Kubernetes
-          - Controller
-          - GitOps
           - Go
-          - Automation
+          - Kubernetes Controller
+          - FinOps
+          - GitOps
       - name: Tenama
         link: https://github.com/Payback159/tenama
         description: "Tenama provides a simple REST API that allows non-cluster administrators in a shared Kubernetes environment to create temporary namespaces. tenama handles the creation, management, and cleanup of the temporary namespaces. "
@@ -56,36 +55,34 @@ portfolioitems:
           - Google OR-Tools
           - Education
           - Optimization
-      - name: Firewall Management UI
-        description: "Developed a Wails.io desktop application to allow IT Security teams to manage Google Cloud Firewall rules without Terraform knowledge, effectively establishing a user-friendly frontend for the Infrastructure as Code backend."
+      - name: Firewall Management Interface
+        description: "Empowered non-technical security teams to manage GCP firewall rules by building a high-level abstraction layer over Terraform. Reduced lead time for security changes and enforced IaC standards through a custom Wails.io interface."
         status: "Completed"
         start: "2025"
         tags:
-          - Wails
+          - Platform Engineering
           - Go
           - Terraform
-          - Google Cloud
-          - Security
+          - Security Governance
 
-  - title: Infrastructure & Platform Projects
+  - title: Strategic Platform Evolution
     portfolioitem:
-      - name: Public Cloud Migration
-        description: "Cloud Architect for the migration of an on-premise landscape to the Public Cloud with a strong focus on Platform Services and Virtualization."
+      - name: Enterprise Public Cloud Transformation
+        description: "Lead Architect for large-scale migration to Public Cloud. Defined the organizational blueprint for platform services, focusing on high availability and seamless developer onboarding."
         start: "2023"
         tags:
-          - Cloud Architecture
-          - Public Cloud
+          - Cloud Strategy
           - Migration
-          - Containers
-      - name: Platform Migration & In-House Kubernetes
-        description: "Technical Lead for Platform Services migrating from SUSE CaaS to an in-house platform based on OpenStack and Kubespray. Established a GitOps workflow and focused on a central monitoring service based on the Prometheus stack."
+          - Enterprise Architecture
+      - name: Evolution of In-House Platforms
+        description: "Technical Lead for the strategic shift from vendor-locked solutions to a sovereign OpenStack/Kubespray platform. Established company-wide GitOps standards and centralized observability via Prometheus Stack."
         image: "/images/kubespray_logo.png"
         start: "2019"
         tags:
+          - Tech Leadership
           - OpenStack
-          - Kubespray
-          - Migration
-          - Leadership
+          - Prometheus
+          - GitOps
       - name: On-Premise Kubernetes Platform
         description: "Planning, architecture, and operation of an on-premise Kubernetes platform based on SUSE Container as a Service. Included establishing know-how and providing migration support."
         start: "2017"

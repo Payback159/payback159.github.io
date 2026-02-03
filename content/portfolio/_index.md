@@ -1,5 +1,5 @@
 ---
 title: 'Portfolio'
 draft: false
-description: 'Welcome to my Portfolio!'
+description: 'Selected projects highlighting my work in Engineering Excellence, Platform Strategy, and Cloud Native Architecture.'
 ---
